@@ -1,0 +1,147 @@
+:root{
+    --background-color: #f9f8f4;
+    --text--color: #2d2823;
+    --text-color2: rgb(118, 115, 115) ;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.heading{
+    font-family:  'Inter', sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.heading .fa-globe {
+    background-color: #e0f2fe; /* Light blue background */
+    color: #3b82f6;            /* Blue icon color */
+    width: 80px;               
+    height: 80px;
+    line-height: 80px;         /* Centers the icon vertically */
+    text-align: center;        /* Centers the icon horizontally */
+    border-radius: 50%;        /* Makes it a circle */
+    font-size: 40px;           /* Size of the icon itself */
+    margin-bottom: 20px;
+    display: inline-block;     
+}
+
+
+
+.heading h1{
+    font-size: 2.3rem;
+    color: var(--text--color);
+    margin-bottom: 10px;
+}
+
+.heading p{
+    font-size: 1.1rem;
+    color: var(--text-color2);
+    font-weight: 500;
+}
+
+.search-box{
+    position: relative;
+    width: 500px;
+}
+
+#searchInput{
+    width: 100%;
+    padding: 12px 10px 12px 40px;
+    font-size: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in;
+}
+
+
+.search-icon {
+    position: absolute; 
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    color: #aaa; 
+    font-size: 18px;
+}
+
+#searchInput:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.search-box:focus-within .search-icon {
+    color: #3b82f6;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.controls select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+/* GRID layout */
+.countries {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin-top: 30px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* FLAG IMAGE */
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* TEXT */
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+}
