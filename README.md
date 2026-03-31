@@ -61,8 +61,8 @@ To run this project on your local machine:
 
 | Role | IP Address | Stack |
 |---|---|---|
-| Web01 | `13.218.66.188` | Ubuntu / Apache |
-| Web02 | `3.84.46.16` | Ubuntu / Apache |
+| Web01 | `13.218.66.188` | Ubuntu |
+| Web02 | `3.84.46.16` | Ubuntu |
 | Lb01 | `54.152.46.14` | Load Balancer |
 
 ### Deployment Steps
@@ -95,6 +95,4 @@ To run this project on your local machine:
 
 ## Demo Video
 
-> [Insert your YouTube/Vimeo link here]
-
-The video demonstrates local functionality, search/filtering, and the Load Balancer's ability to distribute traffic between Web01 and Web02.
+> https://youtu.be/UqJYcLrXfaw
